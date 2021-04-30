@@ -1,0 +1,2 @@
+static/py/backup/*.npy filter=lfs diff=lfs merge=lfs -text
+static/py/backup/*.h5 filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,15 @@
+BACKUP DE ARCHIVOS UTILIZADOS
+
+1) DATOS DE PREPROCESAMIENTO DE IMAGANES
+
+	- "backup_test_filter" : Contiene una matriz con los pixeles de las imagenes de prueba filtradas
+	- "backup_test_y_filter" : Contiene el target de la matriz de prueba
+
+	- "backup_train_filter": Contiene una matriz con los pixeles de las imagenes de entrenamiento filtradas
+	- "backup_train_y_filter" : Contiene el target de la matriz de entrenamiento
+
+2) DATOS DEL MODELO CNN
+
+	- "model  4-7-2020(dd-mm-yyyy)" : Corresponde al modelo construido de CNN entrenado
+	- "pesos model  4-7-2020(dd-mm-yyyy)": Corresponde al pesos del modelo entrenado de CNN
+
