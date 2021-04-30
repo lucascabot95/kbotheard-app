@@ -1,0 +1,40 @@
+{% load static %}
+{% load widget_tweaks %}
+<!doctype html>
+<html lang="en">
+  <head>
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-reboot.min.css' %}">
+    
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
+    
+
+    <title>Error 404 - Pagina inexistente</title>
+  </head>
+  <body style="background-color:#34495E;">
+
+  
+        <img style="margin-left: auto; margin-right: auto;display: block;width:500px; height:550px" src="https://static.vecteezy.com/system/resources/previews/001/203/846/non_2x/eagle-png.png" alt="Card image">
+        
+        <div class="card" style="width:400px; align-content: center;left: 40%;top:60%;position: absolute;background-color: #7386D5; text-align: center; border-radius: 25px;border-color: black;padding-bottom: 10px;">
+        <div class="card-body">
+            <h2 style="color: aliceblue;">Error 404!</h2><br>
+            <h5 style="color: #A93226;">La página solicitda no existe</h5>
+            <a href="{% url 'index' %}">Volver al sitio</a>
+              <br>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    </body>
+</html>

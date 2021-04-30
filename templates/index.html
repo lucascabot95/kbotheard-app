@@ -1,0 +1,60 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Home - Kbotheard {% endblock %}
+
+{% block content %}
+<h2 style="text-align: center;">Retinopatía Diabética</h2>
+  <div class="line"></div>
+  <div class="row">
+    <div class="col-xl-6 col-12" style="padding-left: 20px; padding-top: 20px;"> 
+      <h4>¿Qué es la Retinopatía diabética?</h4>
+      <p>Las personas con diabetes pueden tener una enfermedad ocular llamada retinopatía diabética. Esta enfermedad ocurre porque los niveles altos de azúcar en la sangre causan daño a los vasos sanguíneos en la retina. </p>
+      <p>Estos vasos sanguíneos pueden hincharse y tener fugas de líquido. También pueden cerrarse e impedir que la sangre fluya. A veces, se generan nuevos vasos sanguíneos anormales en la retina. Todos estos cambios pueden hacerle perder la visión.</p>
+      <cite>American Academy of Ophtalmology </cite><br><br>
+      <img src="https://portal.andina.pe/EDPfotografia3/Thumbnail/2018/11/05/000542524W.jpg" class="img-fluid" alt="" srcset="" style="width: 750px;height: 400px;">
+    </div>
+    <div class="col-xl-6 col-12" style="padding-left: 20px; padding-top: 20px;">
+      <h4>¿Cuales son los sintomas?</h4>
+      <p>Las personas puede tener retinopatía diabética y no saberlo. Esto se debe a que generalmente no presenta síntomas en sus etapas tempranas. A medida que empeora, notará síntomas como los siguientes:
+        <ul>
+          <li>Un mayor número de moscas volantes</li>
+          <li>Visión borrosa</li>
+          <li>Visión que cambia de borrosa a clara</li>
+          <li>Ver áreas en blanco o oscuras en el campo de visión</li>
+          <li>Visión nocturna deficiente</li>
+          <li>Notar que los colores se ven atenuados o apagados</li>
+          <li>Perder la visión</li>
+          <li>Los síntomas de la retinopatía diabética suelen afectar a ambos ojos."</li>
+        </ul>
+      </p>
+      <cite>American Academy of Ophtalmology </cite><br><br>
+      <div style="padding-top: 20px;">
+        <img src="{% static 'images/retinopatia-diabetica-vision-normal.png' %}" class="img-fluid" style="width: 300px;padding-left: 40px;" alt="" srcset="">
+        <img src="{% static 'images/vision-retinopatia-diabetica.png' %}" class="img-fluid" style="width: 300px; padding-left: 10px;" alt="" srcset="">
+      </div>
+    </div> 
+
+  </div>
+
+  <div class="line"></div>
+  <section>
+
+  <h2 style="text-align: center;">Fuentes útiles</h2>
+  <div class="row">
+    <div class="col-xl-6 col-12" style="padding-left: 20px; padding-top: 20px; padding-bottom: 20px; text-align: center;"> 
+      <img src="{% static 'images/rd_new.png' %}" class="img-fluid" style="height: 600px;width: 600px;">
+    </div>
+    <div class="col-xl-6 col-12" style="padding-top: 20px;">
+      <img src="{% static 'images/Dr9AbPmWsAAMXG6.png' %}" class="img-fluid" style="width: 600px; height: 600px; padding-left: 10px;" alt="" srcset="">
+    </div>
+  </div>
+  </section>
+
+  </div>
+  </div>
+
+{% endblock %}
+
+  

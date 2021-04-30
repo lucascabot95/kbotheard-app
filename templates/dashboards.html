@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block link_script %}
+        <!-- Estilos de MorrisJ (Dashboard) -->
+        <link rel="stylesheet" type="text/css" href="{% static 'libs/morris.css' %}">
+
+        <!-- Morris JS (Dashboard)-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="{% static 'libs/morris.min.js' %}"></script>
+
+    {% endblock %}
+
+    {% block title %} Dashboard - Kbotheard {% endblock %}
+
+    {% block content %}
+        <br><br>
+        <div class="container">
+
+            <h1>Dashboards</h1>
+            <hr>
+            <div class="row">
+                <!--<div class="col-md-4">
+                    <h4>Cantidad de pacientes y Cantidad de reportes</h4>
+                    <div id="myfirstchart" style="height: 250px;"></div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Cantidad de pacientes por severidad de RD</h4>
+                    <div id="graph" style="height: 250px;"></div>
+                    <br><br><br>
+                </div>
+                
+                -->
+
+                <div class="col-md-12">
+                    <br><br>
+                    <h4>Ranking de los países con mayor número de enfermos de diabetes en 2019 (en miles)</h4>
+                    <div id="bar-example" style="height: 450px;"></div>
+                    <p><i>Fuente: "International Diabetes Federation"</i></p>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block end_script %}
+        <!-- Graficos Js (Dashboard)-->
+    <script src="{% static 'graficos/lineas.js' %}"></script>
+    <script src="{% static 'graficos/donut_chart.js' %}"></script>
+    <script src="{% static 'graficos/Morris_Bar.js' %}"></script>
+
+    {% endblock %}
+    

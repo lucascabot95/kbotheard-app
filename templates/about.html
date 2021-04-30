@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block title %} About - Kbotheard {% endblock %}
+
+    {% block content %}
+        <h2 style="text-align: center;">About</h2>
+        <div align="center">
+        <img src="{% static 'images/iconfinder_info_information_about_help_5402388.png' %}" alt="" srcset="" style="height:60px;">
+        </div>
+
+        <div class="line"></div>
+        <div style="padding-left:160px;padding-right:160px">
+            <h5>
+            <small class="text-muted">El presente sitio web ha sido desarrollado para un proyecto de <b>Tesis de Grado de Ingenieria en Informática.</b> El objetivo que persigue este proyecto, es lograr la Detección Temprana de Retinopatía
+            Diabética clasificando retinografías de pacientes mediante <b> Inteligencia Artificial</b> y brindar un diagnóstico temprano, generando una historia clínica
+            del paciente que podrá ser administrada por el especialista médico mediante este sitio web.
+            <br><br>
+            El desarollo del proyecto fue llevado a cabo por <b> Lucas Cabot </b> junto con la colaboración y supervisión de las siguientes personas:
+            <div style="padding-left:50px;padding-right:100px">
+                <br>
+                <li> <b>Ing. Roberto Mayer</b>, Docente y coordinador de las Tesis de Grado en la Universidad Nacional de Avellaneda (UNDAV).</li> 
+                <br>
+                <li> <b>Ing. Federico D'Angiolo</b>, Director del presente proyecto y docente de la Universidad Nacional de Avellaneda (UNDAV).</li>
+                <br>
+                <li> <b>Celia Gabriela Bagari</b>, Subdirectora del presente proyecto y enfermera del Hospital "Prof. Dr. Juan P. Garrahan"</li>
+            </div>
+            <br>
+            <i>Para conocer en profundidad el proyecto de Tesis, vea a continuación el siguiente documento:</i>
+            <img src="{% static 'images/iconfinder_59_5027853.png' %}" alt="Informe" width="40" height="30"><a href="{% static 'files/Presentación Proyecto de Tesis - Lucas Cabot.pdf' %}" download>  <small>Descargar</small></a>
+            </small>
+            </h5>
+        </div>
+
+    {% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Report - Kbotheard {% endblock %}
+
+{% block content %}
+
+<h1 style="text-align: center;">REPORTE MÉDICO</h1>
+
+<p>{{MEDIA_URL}}{{object.retinografia_left}}</p>
+<p>{{MEDIA_URL}}{{object.retinografia_rigth}}</p>
+
+{%endblock%}

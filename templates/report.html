@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Report - Kbotheard {% endblock %}
+
+{% block content %}
+
+<h1 style="text-align: center;">REPORTE MÉDICO</h1>
+<h3 style="text-align: center;"> Retinopatía Diabética</h3>
+
+<div class="line"></div>
+<div class="d-flex justify-content-center">
+<div class="card" style="width: 18rem; align-items: center;align-">
+  <br>
+  <img src="{% static 'images/iconfinder_ArtificialIntelligence26_2890587.png' %}" class="card-img-top img-fluid" alt="..." style="width: 100px; height: 80px">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title">Paciente: {{object.apellidos}}, {{object.nombres}}</h5>
+    <p class="card-text" style="padding-left: 30px;">Detección temprana de Retinopatía Diabética mediante algoritmo de Inteligencia Artificial</p>
+    <br>
+    <a href="{% url 'informe' object.id %}" class="btn btn-primary">Generar Reporte</a>
+    <br>
+  </div>
+</div>
+</div>
+
+<!-- <p>{{MEDIA_URL}}{{object.retinografia_left}}</p>
+<p>{{MEDIA_URL}}{{object.retinografia_rigth}}</p>-->
+
+{%endblock%}

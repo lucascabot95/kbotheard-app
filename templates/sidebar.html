@@ -1,0 +1,56 @@
+ {% load static %}
+
+ <!-- Sidebar  -->
+      <nav id="sidebar">
+          <div class="sidebar-header">
+              <h2>Kbotherd</h2>
+          </div>
+
+          <ul class="list-unstyled components">
+              <p>Eye health for diabetic retinopathy</p>
+              <li class="active">
+                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                  <ul class="collapse list-unstyled" id="homeSubmenu">
+                      <li>
+                          <a href="{% url 'index' %}">Introduction</a>
+                      </li>
+                      <li>
+                          <a href="{% url 'dashboards' %}">Dashboards</a>
+                      </li>
+
+                  </ul>
+              </li>
+              <li>
+                  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Medical History</a>
+                  <ul class="collapse list-unstyled" id="pageSubmenu">
+                      <li>
+                          <a href="{% url 'patient_list' %}">Search for medical patient</a>
+                      </li>
+                      <li>
+                        <a href="{% url 'add_patient' %}">Add medical patient</a>
+                    </li>
+
+                  </ul>
+              </li>
+              <li>
+                <a href="{% url 'help' %}">Help</a>
+            </li>
+                <br>
+                <hr>
+                <img src="{% static 'images/doctor.png' %}" alt="" srcset="" style="height:120px">
+                <img src="{% static 'images/letras.png' %}" alt="" srcset="" style="height:65px">
+                
+
+
+
+          </ul>
+
+          <ul class="list-unstyled CTAs">
+              <li>
+                  <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=cl&passive=1209600&osid=1&continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender&scc=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="download">Calendar</a>
+              </li>
+              <li>
+                  <a href="{% url 'about' %}" class="article">About</a>
+              </li>
+          </ul>
+      </nav>

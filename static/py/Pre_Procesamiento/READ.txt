@@ -1,0 +1,16 @@
+ACLARACIONES DE LOS ARCHIVOS Y CARPETAS UTILIZADOS:
+
+CARPETAS
+
+"demo" : contiene 4 imagenes de prueba para mostrar la utilizacion de los filtros
+"train_images" : Se encuentra vacia pero deberá contener las 3662 imagenes de entrenamiento provista por el dataset de Keagle https://www.kaggle.com/c/aptos2019-blindness-detection/data
+"test_images" : Se encuentra vacia pero deberá contener las 1928 imagenes de entrenamiento provista por el dataset de Keagle https://www.kaggle.com/c/aptos2019-blindness-detection/data
+
+
+
+ARCHIVOS CSV
+
+"train" : Contiene el id y el diagnostico (grado de severidad) de cada una de las imagenes que aparacen en el dataset de imagenes de entrenamiento
+
+"test" : Contiene el id de cada una de las imagenes que aparacen en el dataset de imagenes de prueba. Estos datos no se encuentran etiquetados.
+

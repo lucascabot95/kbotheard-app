@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+    {% block title %} Add - Kbotheard {% endblock %}
+
+    {% block content %}
+    <br><br>
+                <div class="container">
+                    <h1>Agregar paciente médico</h1>
+                    <hr>
+
+                    <form method="post" action="." enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% for field in form.visible_fields %}
+                            <div class="form-group">
+                            <label for="nombre">{{field.label}}</label>
+                            {{field}}
+
+                            </div>
+                        {%endfor%}
+                        <button class="btn btn-info" type="submit">Grabar <i class="fas fa-save"></i></a>
+                        
+                      </form>
+
+                <script>
+
+                    {% if form.errors %}
+                        var errors = ''
+                        {% for field in form %}
+                            {% for error in field.errors %}
+                                errors+='{{error}}\n'
+                            {%endfor%}
+                        {%endfor%}
+                        Swal.fire({
+                        title: 'Error!',
+                        text: errors,
+                        icon: 'error',
+                        })
+                    {% endif %}
+                </script>
+
+
+                </div>
+
+
+
+                
+
+    {% endblock %}
