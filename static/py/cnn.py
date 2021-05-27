@@ -262,11 +262,11 @@ if(not(LOAD_STATUS)):
     save('static/py/backup/backup_train_y_filter.npy', X["diagnosis"])
     save('static/py/backup/backup_test_y_filter.npy', y_test["diagnosis"])
 
-x_train_filter = load('static/py/backup/backup_train_filter.npy')
-y_train_filter = load('static/py/backup/backup_train_y_filter.npy')
+x_train_filter = np.load('static/py/backup/backup_train_filter.npy',allow_pickle=False,fix_imports=True,encoding='latin1')
+y_train_filter = np.load('static/py/backup/backup_train_y_filter.npy',allow_pickle=False,fix_imports=True,encoding='latin1')
 
-x_test_filter = load('static/py/backup/backup_test_filter.npy')
-y_test_filter = load('static/py/backup/backup_test_y_filter.npy')
+x_test_filter = np.load('static/py/backup/backup_test_filter.npy',allow_pickle=False,fix_imports=True,encoding='latin1')
+y_test_filter = np.load('static/py/backup/backup_test_y_filter.npy',allow_pickle=False,fix_imports=True,encoding='latin1')
 
 #print("\nDATA_TRAIN_X_FILTER: \n")
 #print(x_train_filter.shape)
