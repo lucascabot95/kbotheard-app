@@ -26,7 +26,7 @@ SECRET_KEY = '^s1v@ngco0)!_=arhdny&n6tblp)9y2iy^n*-7tnjme5+gw0w%'
 DEBUG = True
 
 #ALLOWED_HOSTS = ['kbotheard-app.herokuapp.com']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['157.245.220.170']
 
 # Application definition
 
@@ -80,6 +80,8 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -102,7 +104,7 @@ DATABASES = {
     )
 
 }
-'''
+
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
