@@ -121,6 +121,7 @@ class ReportView(DeleteView):
 
 
 def informe(request, pk):
+    '''
     #Libraries local
     from static.py import cnn
 
@@ -269,3 +270,5 @@ def informe(request, pk):
     buffer.close()
     response.write(pdf)
     return response
+    '''
+    return request
